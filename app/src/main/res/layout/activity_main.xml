@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:id="@+id/etProductTitle"
+        android:hint="Enter Your Name "
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:id="@+id/etProductPrice"
+        android:hint="Enter Price "
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:id="@+id/etProductItems"
+        android:hint="Enter Your Name "
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Choose Image"
+         android:layout_gravity="center"
+         android:background="#1030E0"
+         android:textColor="#fff"
+         android:layout_marginTop="10dp"
+         android:id="@+id/btSelectImgId"
+         />-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:id="@+id/progressId"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivSelectedImage"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:background="#1030E0"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btProductSave"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_gravity="center"
+        android:background="#1030E0"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btProductDelete"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        android:layout_gravity="center"
+        android:background="#1030E0"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btProductNextPage"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rvProductListFireStore"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
